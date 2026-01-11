@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo img,
+.profile-picture {
+    width: 60px;
+    height: 60px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1.5fr 4fr;
+}
+
+.header {
+    background-color: rgb(109, 64, 6);
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.header-top {
+    margin-top: 20px;
+}
+
+.header-top,
+.search,
+.profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    margin-left: 50px;
+    gap: 20px;
+    align-items: center;
+}
+
+.search-bar {
+    height: 30px;
+    width: 600px;
+    border-radius: 20px;
+}
+
+.profile {
+    margin-right: 50px;
+    gap: 60px;
+    align-items: center;
+}
+
+.profile-picture {
+    border-radius: 30px;
+}
+
+.profile-picture-large {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-greeting {
+    margin-top: 30px;
+    padding-left: 55px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.large-text {
+    font-size: 32px;
+}
+
+.header-buttons {
+    margin-left: auto;
+    margin-right: 70px;
+    display: flex;
+    gap: 50px;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(59, 59, 59);
+    border-radius: 20px;
+}
+
+.side-bar {
+    height: 100vh;
+    background-color: rgb(168, 101, 0);
+    grid-area: 1 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.top-links,
+.bottom-links {
+    list-style-type: none;
+}
+
+.top-links li, 
+.bottom-links li {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-content {
+    background-color: rgb(187, 160, 103);
+    grid-area: 2 / 2 / 3 / 3;
+}
